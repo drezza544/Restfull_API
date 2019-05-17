@@ -8,7 +8,7 @@ const UserModel = new mongoose.Schema({
     profile: [
         {
             alamat: String,
-            phone: {type: String, max: 6},
+            phone: String,
             tgl_lahir: Date,
         }
     ]

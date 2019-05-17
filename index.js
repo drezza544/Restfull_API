@@ -23,6 +23,12 @@ app.get('/api/v1/user/:user_id', UserController.getById);
 app.put('/api/v1/user/:user_id', UserController.update);
 app.delete('/api/v1/user/:user_id', UserController.delete);
 
+app.post('/api/v1/buku', BukuController.store);
+app.get('/api/v1/buku', BukuController.show);
+app.get('/api/v1/buku/:buku_id', BukuController.getById);
+app.put('/api/v1/buku/:buku_id', BukuController.update);
+app.delete('/api/v1/buku/:buku_id', BukuController.delete);
+
 app.listen(8000, function() {
     console.log("Server is running: *8000");
 });
